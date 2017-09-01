@@ -11,4 +11,9 @@ namespace Monsters
         void Update();
         void Render();
     }
+
+    interface ImdM : Imd
+    {
+        void Move();
+    }
 }

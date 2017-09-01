@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Monsters
 {
-    class Filed : Imd
+    class Field : Imd
     {
+        public int SizeX { get; private set; }
+        public int SizeY { get; private set; }
 
+        public Field(int x, int y)
+        {
+            SizeX = x;
+            SizeY = y;
+        }
         public void Render()
         {
             throw new NotImplementedException();
