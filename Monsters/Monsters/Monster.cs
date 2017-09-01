@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace Monsters
 {
-    abstract class Monster : ImdM
+    abstract class Monster : IMonster
     {
-        char symbol;
-        Field field;
+        Game field;
 
+        public char Symbol { get; }
         public int X { get; set; }
         public int Y { get; set; }
 
-        public Monster(Field f, char c)
+        public Monster(Game f, char c)
         {
             field = f;
-            symbol = c;
-        }
-        
-        public void Render()
-        {
-            throw new NotImplementedException();
+            Symbol = c;
         }
 
         public void Update()
@@ -31,11 +26,6 @@ namespace Monsters
         }
 
         // private
-        public void Move()
-        {
-            throw new NotImplementedException();
-        }
-
         private bool IsInField(int x, int y)
         {
             return x >= 0 && x <= field.SizeX - 1 && y >= 0 && y <= field.SizeX - 1;

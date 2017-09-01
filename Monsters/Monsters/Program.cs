@@ -10,6 +10,15 @@ namespace Monsters
     {
         static void Main(string[] args)
         {
+            char[,] arr = { {'x','x','x','x','x','x','x','x','x','x'},
+                {'x','x','x','x','x','x','x','x','x','x'},{'x','x','x','x','x','x','x','x','x','x'} };
+
+            Game game = new Game(Display.GetWidth()-1, Display.GetHeight()-1);
+
+            game.Update();
+            game.Render();
+
+            Console.ReadKey();
         }
     }
 }

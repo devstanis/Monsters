@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Monsters
 {
-    interface IMonster
+    static class Settings
     {
-        void Update();
-        
+        public static char borderSym = '*';
+        public static char emptySym = ' ';
     }
-
 }
