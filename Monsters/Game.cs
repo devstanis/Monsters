@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Monsters
 {
-    static class Settings
+    class Game
     {
-        public static char borderSym = '*';
-        public static char emptySym = ' ';
     }
 }
