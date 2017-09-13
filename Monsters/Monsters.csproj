@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameObjects\Dog.cs" />
+    <Compile Include="GameObjects\DynObject.cs" />
+    <Compile Include="GameObjects\Empty.cs" />
+    <Compile Include="GameObjects\StateObject.cs" />
+    <Compile Include="GameObjects\Wall.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Display.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameForm.cs">
@@ -54,7 +60,7 @@
     <Compile Include="GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monster.cs" />
+    <Compile Include="GameObjects\BaseObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameForm.resx">

@@ -20,6 +20,7 @@ namespace Monsters
             g = form.CreateGraphics();
             Width = form.Width;
             Height = form.Height;
+            Settings.SetSize(Width, Height);
             buffer = context.Allocate(g, new Rectangle(0, 0, Width, Height));
         }
 
